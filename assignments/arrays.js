@@ -111,11 +111,11 @@ console.log(oldCars);
 
 let BMWAndAudi = [];
 
-for (let i = 0; i < inventory.length; i++) {
-    BMWAndAudi.push(inventory[i].car_make);
+for (i = 0; i < inventory.length; i++) {
+    if(inventory[i].car_make == "BMW" || inventory[i].car_make == "Audi") {
+    BMWAndAudi.push(inventory[i]);
+    }
 }
-BMWAndAudi.sort();
-
 console.log(BMWAndAudi);
 
 
